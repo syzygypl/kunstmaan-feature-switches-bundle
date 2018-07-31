@@ -1,0 +1,22 @@
+services:
+
+  szg.feature_switch.repository:
+    class: Doctrine\ORM\EntityRepository
+    public: false
+    arguments:
+     - '@doctrine.orm.entity_manager'
+     - '@szg.metadata.feature_switch'
+
+  szg.metadata.feature_switch:
+    class: 'Doctrine\ORM\Mapping\ClassMetaData'
+    public: false
+    arguments: [ 'SZG\KunstmaanFeatureSwitchesBundle\Entity\FeatureSwitch' ]
+
+  SZG\KunstmaanFeatureSwitchesBundle\Security\FeatureVoter:
+      arguments: ['@szg.feature_switch.repository']
+      tags:
+          - { name: security.voter }
+
+  SZG\KunstmaanFeatureSwitchesBundle\EventListener\FeaturesMenuAdaptor:
+      tags:
+          - { name: kunstmaan_admin.menu.adaptor }

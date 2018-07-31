@@ -1,0 +1,18 @@
+{
+  "name": "syzygypl/kunstmaan-feature-switches-bundle",
+  "require": {
+    "arsthanea/kunstmaan-extra-bundle": "1.0-RC.2"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mateusz Dołęga",
+      "email": "mdx@mdx.pl"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "SZG\\KunstmaanFeatureSwitchesBundle\\": "src/"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+kunstmaanfeatureswitchesbundle_admin_featureswitch:
+  defaults: { _controller: 'KunstmaanFeatureSwitchesBundle:AdminList\FeatureSwitchAdminList:index' }
+  path: /featureswitch
+
+kunstmaanfeatureswitchesbundle_admin_featureswitch_add:
+  defaults: { _controller: 'KunstmaanFeatureSwitchesBundle:AdminList\FeatureSwitchAdminList:add' }
+  path: /featureswitch/add
+  methods: ['GET', 'POST']
+
+kunstmaanfeatureswitchesbundle_admin_featureswitch_bulk_enable:
+  defaults: { _controller: 'KunstmaanFeatureSwitchesBundle:AdminList\FeatureSwitchAdminList:bulkEnable' }
+  path: /featureswitch/bulk-enable
+
+kunstmaanfeatureswitchesbundle_admin_featureswitch_bulk_disable:
+  defaults: { _controller: 'KunstmaanFeatureSwitchesBundle:AdminList\FeatureSwitchAdminList:bulkDisable' }
+  path: /featureswitch/bulk-disable
