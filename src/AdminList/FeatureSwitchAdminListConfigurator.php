@@ -52,7 +52,7 @@ class FeatureSwitchAdminListConfigurator extends AbstractDoctrineORMAdminListCon
     {
         $this->addField('name', 'Feature', true);
         $this->addField('code', 'Feature code', true);
-        $this->addField('enabled', 'Is enabled', true, 'KunstmaanFeatureSwitchesBundle:AdminList\Fields:bool.html.twig');
+        $this->addField('enabled', 'Is enabled', true, 'KunstmaanFeatureSwitchesBundle:AdminList\fields:bool.html.twig');
     }
 
     /**

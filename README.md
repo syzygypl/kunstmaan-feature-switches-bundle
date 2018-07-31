@@ -96,7 +96,7 @@ Create a new file: `app/Features.php`
 
 class Features
 {
-    const MY_SPECIAL = 'feature_my_special';
+    const MY_SPECIAL = 'my_special_feature';
 }
 ```
 
