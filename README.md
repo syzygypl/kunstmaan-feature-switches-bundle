@@ -53,7 +53,7 @@ Step 4: Import routes
 // app/config/routing.yml
 KunstmaanFeatureSwitchesBundle:
     resource: "@KunstmaanFeatureSwitchesBundle/Resources/config/routing.yml"
-    prefix:   /{_locale}/
+    prefix:   /{_locale}/admin/
     requirements:
         _locale: "%requiredlocales%"
 ```
