@@ -1,7 +1,7 @@
 {
   "name": "syzygypl/kunstmaan-feature-switches-bundle",
   "require": {
-    "arsthanea/kunstmaan-extra-bundle": "1.0-RC.2"
+    "arsthanea/kunstmaan-extra-bundle": "^1.0"
   },
   "license": "MIT",
   "authors": [
